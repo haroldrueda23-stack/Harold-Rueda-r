@@ -1,0 +1,151 @@
+{
+  "pca_varianza": {
+    "por_componente": [
+      0.36198848099926334,
+      0.19207490257008938,
+      0.11123630536249987,
+      0.0706903018271403,
+      0.06563293679648599,
+      0.049358233192225695,
+      0.04238679322623316,
+      0.026807489483788662,
+      0.02222153404789712,
+      0.01930019093944076,
+      0.01736835689989913,
+      0.012982325756042098,
+      0.007952148898994496
+    ],
+    "acumulada": [
+      0.36198848099926334,
+      0.5540633835693527,
+      0.6652996889318525,
+      0.7359899907589929,
+      0.8016229275554788,
+      0.8509811607477045,
+      0.8933679539739376,
+      0.9201754434577263,
+      0.9423969775056235,
+      0.9616971684450643,
+      0.9790655253449634,
+      0.9920478511010055,
+      1.0
+    ],
+    "n90": 8,
+    "n95": 10
+  },
+  "pca_cargas": {
+    "PC1_top": [
+      "flavanoids",
+      "total_phenols",
+      "od280/od315_of_diluted_wines",
+      "proanthocyanins",
+      "nonflavanoid_phenols"
+    ],
+    "PC2_top": [
+      "color_intensity",
+      "alcohol",
+      "proline",
+      "ash",
+      "magnesium"
+    ],
+    "cargas": {
+      "PC1": {
+        "alcohol": 0.1443,
+        "malic_acid": -0.2452,
+        "ash": -0.0021,
+        "alcalinity_of_ash": -0.2393,
+        "magnesium": 0.142,
+        "total_phenols": 0.3947,
+        "flavanoids": 0.4229,
+        "nonflavanoid_phenols": -0.2985,
+        "proanthocyanins": 0.3134,
+        "color_intensity": -0.0886,
+        "hue": 0.2967,
+        "od280/od315_of_diluted_wines": 0.3762,
+        "proline": 0.2868
+      },
+      "PC2": {
+        "alcohol": 0.4837,
+        "malic_acid": 0.2249,
+        "ash": 0.3161,
+        "alcalinity_of_ash": -0.0106,
+        "magnesium": 0.2996,
+        "total_phenols": 0.065,
+        "flavanoids": -0.0034,
+        "nonflavanoid_phenols": 0.0288,
+        "proanthocyanins": 0.0393,
+        "color_intensity": 0.53,
+        "hue": -0.2792,
+        "od280/od315_of_diluted_wines": -0.1645,
+        "proline": 0.3649
+      }
+    },
+    "var_pc1": 0.36198848099926334,
+    "var_pc2": 0.19207490257008938
+  },
+  "svd_equivalencia": {
+    "varianza": true,
+    "direcciones": true,
+    "proyeccion": true,
+    "valores_singulares_5": [
+      28.94203422415735,
+      21.082251410776493,
+      16.0437156110679,
+      12.789736448731176,
+      12.323741953930568
+    ]
+  },
+  "svd_comparacion": [
+    {
+      "Método": "PCA (estandarizado)",
+      "Varianza explicada, 2 comp. (%)": 55.41
+    },
+    {
+      "Método": "SVD sobre datos centrados",
+      "Varianza explicada, 2 comp. (%)": 55.41
+    },
+    {
+      "Método": "TruncatedSVD sin centrar ([0,1])",
+      "Varianza explicada, 2 comp. (%)": 51.07
+    },
+    {
+      "Método": "PCA ([0,1])",
+      "Varianza explicada, 2 comp. (%)": 59.72
+    }
+  ],
+  "svd_error": {
+    "1": 0.798756232527006,
+    "2": 0.6677848578926053,
+    "3": 0.5785328954071216,
+    "4": 0.5138190432837295,
+    "5": 0.44539541134201327,
+    "6": 0.38602958339004995,
+    "7": 0.3265456262546818,
+    "8": 0.2825323991018972,
+    "9": 0.2400062967806815,
+    "10": 0.19571109205902404,
+    "11": 0.14468750690725388,
+    "12": 0.08917482211361301,
+    "13": 1.2647881814106303e-15
+  },
+  "kmeans_en_espacio_reducido": [
+    {
+      "Datos": "Original (13 dimensiones)",
+      "Dimensiones": 13,
+      "ARI": 0.897,
+      "Silueta": 0.285
+    },
+    {
+      "Datos": "PCA 2 componentes",
+      "Dimensiones": 2,
+      "ARI": 0.895,
+      "Silueta": 0.561
+    },
+    {
+      "Datos": "PCA 8 componentes (90 % varianza)",
+      "Dimensiones": 8,
+      "ARI": 0.897,
+      "Silueta": 0.315
+    }
+  ]
+}
